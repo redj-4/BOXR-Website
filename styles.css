@@ -69,6 +69,8 @@ nav ul li a:hover {
 
 /* Existing styles... */
 
+/* ... (keep your existing styles) ... */
+
 /* Hamburger Menu Styles */
 .hamburger {
     display: none;
@@ -99,16 +101,23 @@ nav ul li a:hover {
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        padding: 20px 0;
     }
 
     .nav-menu.active {
         left: 0;
     }
 
-    /* ... rest of your mobile styles ... */
+    .nav-menu li {
+        margin: 16px 0;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+    }
 }
 
-/* ... Rest of your existing styles */
+/* ... (keep your existing styles) ... */
 
 
 /* Main Content Styles */
