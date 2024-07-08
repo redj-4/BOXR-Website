@@ -71,6 +71,30 @@ nav ul li a:hover {
 
 /* ... (keep your existing styles) ... */
 
+/* ... (keep your existing styles) ... */
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 /* Hamburger Menu Styles */
 .hamburger {
     display: none;
@@ -95,13 +119,12 @@ nav ul li a:hover {
         position: fixed;
         left: -100%;
         top: 70px;
-        gap: 0;
         flex-direction: column;
         background-color: #000;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        padding: 20px 0;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
@@ -109,11 +132,23 @@ nav ul li a:hover {
     }
 
     .nav-menu li {
-        margin: 16px 0;
+        margin: 25px 0;
     }
 
     .nav-menu li a {
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
 

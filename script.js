@@ -1,25 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Hamburger menu functionality
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
 
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
-            this.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+    hamburger.addEventListener("click", mobileMenu);
 
-        // Close menu when clicking a nav link
-        document.querySelectorAll('.nav-menu li a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
     }
 
-    // Rest of your existing JavaScript...
+    const navLink = document.querySelectorAll(".nav-menu li a");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
 });
+
+// Rest of your existing JavaScript...
 
  // Feature item hover effect (only on home page)
  const featureItems = document.querySelectorAll('.feature-item');
