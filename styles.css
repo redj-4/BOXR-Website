@@ -105,15 +105,8 @@ nav ul li a:hover {
         left: 0;
     }
 
-    .nav-menu li {
-        margin: 16px 0;
-    }
-
-    .nav-menu li a {
-        font-size: 18px;
-    }
+    /* ... rest of your mobile styles ... */
 }
-
 
 /* ... Rest of your existing styles */
 
