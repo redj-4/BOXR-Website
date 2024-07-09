@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOXR - Pricing</title>
+    <title>BOXR - Pricing Plans</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -28,33 +29,92 @@
     </header>
 
     <main>
-        <div class="container">
-            <section id="pricing">
-                <h2>Pricing Plans</h2>
+        <section id="pricing" class="full-width-section">
+            <div class="container">
+                <h1>Choose Your Path to Boxing Mastery</h1>
+                <p class="section-description">Select the plan that best fits your boxing journey and goals.</p>
+                
                 <div class="pricing-grid">
                     <div class="pricing-card">
-                        <h3>Basic</h3>
-                        <p class="price">Free</p>
-                        <ul>
-                            <li>Access to basic courses</li>
-                            <li>Community forum access</li>
+                        <div class="card-header">
+                            <h3>Beginner</h3>
+                            <p class="price">Free</p>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Access to basic courses</li>
+                            <li><i class="fas fa-check"></i> Community forum access</li>
+                            <li><i class="fas fa-check"></i> Monthly technique tips</li>
+                            <li><i class="fas fa-times"></i> Advanced courses</li>
+                            <li><i class="fas fa-times"></i> Personal coaching</li>
                         </ul>
-                        <a href="contact.html" class="cta-button">Choose Plan</a>
+                        <a href="#" class="cta-button">Get Started</a>
                     </div>
+                    
                     <div class="pricing-card featured">
-                        <h3>Pro</h3>
-                        <p class="price">$1/month</p>
-                        <ul>
-                            <li>Access to all courses</li>
-                            <li>1-on-1 virtual coaching session</li>
-                            <li>Exclusive webinars</li>
+                        <div class="card-header">
+                            <h3>Pro Fighter</h3>
+                            <p class="price">$29.99<span>/month</span></p>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Access to ALL courses</li>
+                            <li><i class="fas fa-check"></i> Community forum access</li>
+                            <li><i class="fas fa-check"></i> Weekly technique tips</li>
+                            <li><i class="fas fa-check"></i> 2 personal coaching sessions/month</li>
+                            <li><i class="fas fa-check"></i> Exclusive webinars</li>
                         </ul>
-                        <a href="contact.html" class="cta-button">Choose Plan</a>
+                        <a href="#" class="cta-button">Become a Pro</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="card-header">
+                            <h3>Contender</h3>
+                            <p class="price">$9.99<span>/month</span></p>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Access to all courses</li>
+                            <li><i class="fas fa-check"></i> Community forum access</li>
+                            <li><i class="fas fa-check"></i> Bi-weekly technique tips</li>
+                            <li><i class="fas fa-check"></i> Monthly group coaching session</li>
+                            <li><i class="fas fa-times"></i> Personal coaching</li>
+                        </ul>
+                        <a href="#" class="cta-button">Join Now</a>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <section id="faq" class="full-width-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Can I switch plans?</h3>
+                        <p>Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is there a long-term commitment?</h3>
+                        <p>No, all our plans are month-to-month. You can cancel at any time without penalty.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How do the coaching sessions work?</h3>
+                        <p>Coaching sessions are conducted via video call. You'll receive a link to schedule your session after signing up.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What equipment do I need?</h3>
+                        <p>For most courses, you'll just need comfortable clothes and space to move. Some advanced courses may require basic boxing equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <section id="cta" class="full-width-section">
+        <div class="container">
+            <h2>Ready to Step into the Ring?</h2>
+            <p>Join BOXR today and start your journey to becoming a skilled boxer.</p>
+            <a href="#" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
