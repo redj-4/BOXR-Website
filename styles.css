@@ -341,3 +341,58 @@ input, textarea {
     background-color: #333;
     color: #f5f5f5;
 }
+
+/*For basics.html styling*/
+.full-width-section {
+    padding: 60px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.full-width-section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.media-container {
+    flex: 1;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.media-container img,
+.media-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .media-container,
+    .text-content {
+        width: 100%;
+    }
+}
+
+.text-content p, .text-content ul, .text-content ol {
+    margin-bottom: 15px;
+}
+
+.text-content li {
+    margin-bottom: 10px;
+}
+
+.text-content strong {
+    font-weight: bold;
+}
