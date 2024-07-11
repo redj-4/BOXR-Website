@@ -17,21 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }
-});
 
-// Rest of your existing JavaScript...
+    // Feature item hover effect (only on home page)
+    const featureItems = document.querySelectorAll('.feature-item');
 
- // Feature item hover effect (only on home page)
- // Feature item hover effect (only on home page)
-const featureItems = document.querySelectorAll('.feature-item');
+    featureItems.forEach(item => {
+        item.addEventListener('mouseover', function() {
+            featureItems.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+        });
 
-featureItems.forEach(item => {
-    item.addEventListener('mouseover', function() {
-        featureItems.forEach(i => i.classList.remove('active'));
-        this.classList.add('active');
-    });
-
-    item.addEventListener('mouseout', function() {
-        this.classList.remove('active');
+        item.addEventListener('mouseout', function() {
+            this.classList.remove('active');
+        });
     });
 });
