@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOXR - Courses</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
                 </div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -26,27 +27,143 @@
             </nav>
         </div>
     </header>
+
     <main>
         <div class="container">
             <section id="courses">
-                <h2>Our Courses</h2>
+                <h1>Our Courses</h1>
+                <p class="section-description">Discover the perfect boxing course to match your skill level and goals. From beginners to advanced fighters, we have a program designed to elevate your boxing game.</p>
+                
                 <div class="course-grid">
-                    <a href="beginners.html" class="course-card">
+                    <div class="course-card" data-course="beginners">
+                        <div class="course-icon"><i class="fa-solid fa-hand-fist"></i></div>
                         <h3>Beginner's Boxing</h3>
                         <p>Perfect for newcomers to the sport.</p>
-                    </a>
-                    <a href="intermediate.html" class="course-card">
+                        <ul class="course-details">
+                            <li><i class="fa-solid fa-calendar-days"></i> Duration: 8 weeks</li>
+                            <li><i class="fa-solid fa-clock"></i> Classes per week: 3</li>
+                            <li><i class="fa-solid fa-user-graduate"></i> Skill level: No experience required</li>
+                        </ul>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="course-card" data-course="intermediate">
+                        <div class="course-icon"><i class="fa-solid fa-dumbbell"></i></div>
                         <h3>Intermediate Techniques</h3>
                         <p>Refine your skills and learn new strategies.</p>
-                    </a>
-                    <a href="advanced.html" class="course-card">
+                        <ul class="course-details">
+                            <li><i class="fa-solid fa-calendar-days"></i> Duration: 10 weeks</li>
+                            <li><i class="fa-solid fa-clock"></i> Classes per week: 4</li>
+                            <li><i class="fa-solid fa-user-graduate"></i> Skill level: 6+ months experience</li>
+                        </ul>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="course-card" data-course="advanced">
+                        <div class="course-icon"><i class="fa-solid fa-fire"></i></div>
                         <h3>Advanced Training</h3>
                         <p>Push your limits and train like a pro.</p>
-                    </a>
+                        <ul class="course-details">
+                            <li><i class="fa-solid fa-calendar-days"></i> Duration: 12 weeks</li>
+                            <li><i class="fa-solid fa-clock"></i> Classes per week: 5</li>
+                            <li><i class="fa-solid fa-user-graduate"></i> Skill level: 2+ years experience</li>
+                        </ul>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="course-benefits">
+                <h2>Why Choose Our Courses?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Expert Instructors</h3>
+                        <p>Learn from experienced boxing professionals who are passionate about teaching.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <h3>State-of-the-Art Facilities</h3>
+                        <p>Train in our modern gym equipped with the latest boxing gear and equipment.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h3>Personalized Progress Tracking</h3>
+                        <p>Monitor your improvement with our custom progress tracking system.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-handshake"></i>
+                        <h3>Supportive Community</h3>
+                        <p>Join a community of like-minded individuals who share your passion for boxing.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h2>What Our Students Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-item">
+                        <p>"BOXR's beginner course gave me the confidence to step into the ring. The instructors are amazing!"</p>
+                        <p class="testimonial-author">- Sarah J.</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"The intermediate course helped me refine my technique and take my skills to the next level."</p>
+                        <p class="testimonial-author">- Mike T.</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"As a competitive boxer, the advanced course pushed me to my limits and beyond. Highly recommended!"</p>
+                        <p class="testimonial-author">- Alex R.</p>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
+
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <h3>Curriculum</h3>
+            <ul id="modal-curriculum"></ul>
+            <button class="cta-button enroll-btn">Enroll Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/re__dj/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay up to date with our latest news and offers!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="cta-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BOXR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
