@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOXR - About Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -28,27 +29,86 @@
     </header>
 
     <main>
-        <div class="container">
-            <section id="about">
-                <h2>About BOXR</h2>
-                <p>BOXR is dedicated to bringing the art of boxing to enthusiasts of all levels. Our world-class trainers and state-of-the-art facilities provide the perfect environment for you to master the sweet science of boxing.</p>
-                <h3>Our Mission</h3>
-                <p>To empower individuals through the discipline, fitness, and self-defense skills that boxing provides.</p>
-                <h3>Our Team</h3>
-                <div class="trainer-grid">
-                    <div class="trainer-card">
-                        <img src="https://via.placeholder.com/150" alt="Trainer 1">
-                        <h3>John Doe</h3>
-                        <p>Former Welterweight Champion</p>
+        <section id="hero" class="full-width-section">
+            <div class="container">
+                <h1>About BOXR</h1>
+                <p>Discover the power of boxing with BOXR - Where champions are made.</p>
+            </div>
+        </section>
+
+        <section id="our-story" class="full-width-section">
+            <div class="container content-wrapper">
+                <div class="media-container">
+                    <img src="https://via.placeholder.com/600x400" alt="BOXR Gym">
+                </div>
+                <div class="text-content">
+                    <h2>Our Story</h2>
+                    <p>BOXR was born out of a passion for boxing and a vision to create a space where individuals could discover their inner strength. What started as a small gym has grown into a thriving community of boxing enthusiasts and fitness seekers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-mission" class="full-width-section">
+            <div class="container content-wrapper">
+                <div class="text-content">
+                    <h2>Our Mission</h2>
+                    <p>At BOXR, we're committed to empowering individuals through the discipline, fitness, and self-defense skills that boxing provides. We believe that boxing is more than just a sport - it's a pathway to personal transformation.</p>
+                </div>
+                <div class="media-container">
+                    <img src="https://via.placeholder.com/600x400" alt="Boxing Training">
+                </div>
+            </div>
+        </section>
+
+        <section id="what-sets-us-apart" class="full-width-section">
+            <div class="container">
+                <h2>What Sets Us Apart</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Expert Instruction</h3>
+                        <p>Learn from experienced trainers with real-world boxing expertise.</p>
                     </div>
-                    <div class="trainer-card">
-                        <img src="https://via.placeholder.com/150" alt="Trainer 2">
-                        <h3>Jane Smith</h3>
-                        <p>Olympic Gold Medalist</p>
+                    <div class="feature-item">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>State-of-the-Art Facilities</h3>
+                        <p>Train with top-quality equipment in a modern, motivating environment.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-cog"></i>
+                        <h3>Personalized Approach</h3>
+                        <p>Programs tailored to meet your individual needs and goals.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Supportive Community</h3>
+                        <p>Join a group of like-minded individuals who inspire each other.</p>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <section id="our-team" class="full-width-section">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <div class="trainer-grid">
+                    <div class="trainer-card">
+                        <img src="https://via.placeholder.com/300" alt="Divya Joshi">
+                        <h3>Divya Joshi</h3>
+                        <p>Founder & Head Trainer</p>
+                        <p>With over a decade of experience in competitive boxing and fitness training, Divya brings passion, expertise, and a holistic approach to boxing instruction. Her innovative training methods have made BOXR a leading name in boxing fitness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join-us" class="full-width-section">
+            <div class="container">
+                <h2>Join the BOXR Family</h2>
+                <p>Whether you're looking to improve your fitness, learn self-defense, or pursue competitive boxing, BOXR is here to support you every step of the way.</p>
+                <a href="contact.html" class="cta-button">Get Started Today</a>
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>
