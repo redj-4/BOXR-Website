@@ -487,6 +487,8 @@ input, textarea {
     font-size: 18px;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
 }
 
 .enroll-btn:hover {
